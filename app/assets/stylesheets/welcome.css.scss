@@ -1,0 +1,128 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header{
+  font-size: 48px;
+  text-align: center;
+  background-color: #2be3e6;
+  text-decoration: underline;
+}
+
+p{
+  margin-top:0;
+  margin-bottom:0
+}
+
+
+body{
+  background-color: #2be3e6;
+  top-margin: 0px;
+}
+
+
+#recent{
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#tweets{
+  width: 19%;
+  float: left;
+  background-color: #12f368;
+  font-family: fantasy;
+  display: block;
+  padding-right:15px;
+  padding-left:15px;
+  height:1500px;
+  overflow:scroll;
+}
+
+.tweet_pic{
+  vertical-align: middle;
+}
+
+.tweet_link{
+  font-style: bold;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  text-shadow: 5px 5px 5px #6a7bf3;
+}
+
+.tweet_link:hover{
+  color: #6a7bf3;
+  font-size: 30px;
+}
+
+.pics{
+  display: square;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+  height: 175px;
+}
+
+.pics:hover{
+  width: 250px;
+  height: 250px;
+}
+
+#instagrams{
+  font-size: 30px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #6a7bf3;
+  height:1500px;
+  overflow:scroll;
+  padding-right:15px;
+  padding-left:15px;
+}
+
+#pictures{
+  font-family: cursive;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.story_pub{
+  margin-top:10px;
+  font-size: 16px;
+  font-style: bold;
+}
+
+.date{
+  font-size: 10px;
+  font-style: italic;
+}
+
+.story_link{
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.story_link:hover{
+  color: #6a7bf3;
+  font-size: 30px;
+}
+
+#news{
+  margin-top:0;
+  width: 19%;
+  background-color: #12f368;
+  float: right;
+  padding-right:15px;
+  padding-left:15px;
+  height:1500px;
+  overflow:scroll;
+}
+
+#In_the_News{
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}

@@ -1,0 +1,40 @@
+<head>
+  <title>
+    All Things Paws
+  </title>
+</head>
+
+<div>
+  <h1 id= "header">
+    <%= image_tag("Paw_print 2.gif", :alt => "Paw_print 2", :size => "50x50", :class => "paw") %>
+    All Things Paws
+    <%= image_tag("Paw_print 2.gif", :alt => "Paw_print 2", :size => "50x50") %>
+  </h1>
+</div>
+<body>
+<div id="tweets">
+  <h2 id="recent">Recent Tweets</h2>
+  <% @tweets.each do |tweet| %>
+      <%= image_tag(tweet.user.profile_image_url, :class => "tweet_pic")%><%= link_to(tweet.user.name , "http://twitter.com/#{tweet.user.screen_name}", :class => "tweet_link") %><br /> <%=tweet.text %> <br /> <br /> <br />
+  <% end %>
+  </div>
+
+<div id = "news">
+  <h2 id = "In_the_News">
+    I am in the News!
+  </h2>
+  <% @google.each do |story| %>
+      <p class="stories"><%= link_to(story.title, story.uri, :class => "story_link") %> </p><p class="story_pub"><%= story.publisher %></p><p class="date"> <%= story.published %></p> <br /> <br />
+  <% end %>
+</div>
+
+<div id="instagrams">
+  <h2 id="pictures">
+    Too Cute
+  </h2>
+  <% @instagram.each do |picture| %>
+    <%= link_to(image_tag(picture.images.standard_resolution.url, :class => "pics"), picture.link) %>
+      <% end %>
+</div>
+
+</body>
